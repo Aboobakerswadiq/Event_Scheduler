@@ -43,6 +43,7 @@ git clone https://github.com/Aboobakerswadiq/Event_Scheduler.git
 cd event-scheduler
 
 **###2️⃣ Install Dependencies**
+```bash
 pip install flask flask_cors apscheduler
 pip install secure-smtplib
 
