@@ -35,24 +35,51 @@ A full-stack Python + HTML/CSS/JavaScript project that lets users create, view, 
 
 ---
 
-## 🧑‍💻 Installation & Setup
+## 🧑‍💻 Installation, Setup & API Testing (One Command Block)
 
-### 1️⃣ Clone the Repo
 ```bash
-git clone https://github.com/Aboobakerswadiq/Event_Scheduler.git
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/event-scheduler.git
 cd event-scheduler
 
-**###2️⃣ Install Dependencies**
-```bash
-pip install flask flask_cors apscheduler
+# 2️⃣ Install all required dependencies
+pip install flask flask_cors apscheduler pytest
+
+# Optional (for email notifications)
 pip install secure-smtplib
 
-3️⃣ Run the Backend
+# 3️⃣ Run the Flask backend
 python app.py
-Runs on: http://localhost:5000
 
-4️⃣ Open Frontend
-Just open index.html in your browser.
+# 4️⃣ Open the frontend
+# Just open index.html in your browser (double-click or use VS Code Live Server)
 
+# 5️⃣ [Optional] Test API using Postman
+# Example POST Request to create an event:
+# URL: http://localhost:5000/events
+# Method: POST
+# Headers: Content-Type: application/json
+# Body:
+# {
+#   "title": "Meeting with Team",
+#   "description": "Project planning",
+#   "start_time": "2025-07-01T10:00:00",
+#   "end_time": "2025-07-01T11:00:00",
+#   "recurring": "weekly",
+#   "email": "your-email@gmail.com"
+# }
+
+# Example GET to list all events:
+# URL: http://localhost:5000/events
+# Method: GET
+
+# Example PUT to update an event:
+# URL: http://localhost:5000/events/<event_id>
+# Method: PUT
+# (same JSON format as POST)
+
+# Example DELETE:
+# URL: http://localhost:5000/events/<event_id>
+# Method: DELETE
 
 
