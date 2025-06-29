@@ -1,0 +1,91 @@
+* {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .form-panel, .list-panel {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .form-panel {
+      background: #ffffff;
+      border-right: 1px solid #e0e0e0;
+    }
+
+    .list-panel {
+      background: #f9f9f9;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+
+    .event {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .event button {
+      width: auto;
+      margin-right: 10px;
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+
+    #searchBox {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .form-panel, .list-panel {
+        border: none;
+      }
+    }

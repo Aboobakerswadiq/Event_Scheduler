@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Scheduler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-panel">
+      <h2>Schedule an Event</h2>
+      <form id="eventForm">
+        <input type="text" id="title" placeholder="Event Title" required>
+        <textarea id="description" placeholder="Event Description" rows="3" required></textarea>
+        <input type="datetime-local" id="start_time" required>
+        <input type="datetime-local" id="end_time" required>
+        <select id="recurring">
+          <option value="">One-time</option>
+          <option value="daily">Daily</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+        </select>
+        <input type="email" id="email" placeholder="Reminder Email (optional)">
+        <button type="submit">Add Event</button>
+      </form>
+    </div>
+
+    <div class="list-panel">
+      <h2>Scheduled Events</h2>
+      <input type="text" id="searchBox" placeholder="Search by title or description">
+      <div id="reminders"></div>
+      <div id="eventList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
