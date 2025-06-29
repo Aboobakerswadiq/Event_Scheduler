@@ -1,6 +1,6 @@
 # 📅 Event Scheduler System
 
-A full-stack Python + HTML/CSS/JavaScript project that lets users create, view, update, delete, and search for events — with reminders and optional email notifications.
+A full-stack Python + HTML/CSS/JavaScript project that lets users create, view, update, delete, and search for events — with reminders and email notifications.
 
 ---
 
