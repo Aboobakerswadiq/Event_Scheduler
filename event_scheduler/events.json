@@ -9,15 +9,6 @@
         "email": ""
     },
     {
-        "id": "d6031713-aec8-419b-8e82-fb9931bf7bee",
-        "title": "abcddd",
-        "description": "dqwdd",
-        "start_time": "2025-06-29T13:36",
-        "end_time": "2025-06-29T13:42",
-        "recurring": "",
-        "email": "aboobakerswadiq68@gmail.com"
-    },
-    {
         "id": "f80f0a18-467a-4499-af83-c3b68cbe5db3",
         "title": "Test Event",
         "description": "Pytest check",
